@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>
+      Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+      Lifestyle, Books & More. Best Offers!
+    </title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utils.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,51 +16,42 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+  <link rel="shortcut icon" href="./images/flipkart_icon-icons.com_62718.ico" type="image/x-icon">
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo-container">
+    <div class="navbar">
+      <div class="logo-container">
+        <div>
+          <div class="logo-image-container">
+            <img
+              class="logo-image"
+              src="./images/logo.png"
+              alt="flikart-text-logo"
+            />
+          </div>
+        </div>
+        <div class="explore-container">
+          <div class="explore-text-container">Explore <span>Plus</span></div>
           <div>
-            <div class="main-logo-container">
+            <div class="plus-logo-image-conntainer">
               <img
-                src="./images/logo.png"
-                alt="main-logo"
-                class="main-logo-image"
+                class="plus-logo-image"
+                src="./images/logo-plus.png"
+                alt="flipkart-plus-logo"
               />
             </div>
           </div>
-          <div class="explore-container">
-            <div class="explore-container-text">
-              Explore <span class="explore-container-plus">Plus</span>
-            </div>
-            <div>
-              <div class="explore-logo-container">
-                <img
-                  class="explore-logo-image"
-                  alt="plus-logo"
-                  src="./images/logo-plus.png"
-                />
-              </div>
-            </div>
-          </div>
         </div>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-      dignissimos maxime nulla nostrum autem impedit veritatis, rem, esse
-      dolorem consequatur consequuntur placeat quidem!
-    </main>
-
-    <footer class="flex-all-center">
-      <p>Copyright &copy; Flipkart.com</p>
-    </footer>
+      </div>
+      <div>
+        <div class="searchbar-container">
+          <input class="search-input" placeholder="Search for products, brands and more"></input>
+          <button class="search-input-container">
+            <i class="fi fi-bs-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

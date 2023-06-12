@@ -5,103 +5,118 @@
   box-sizing: border-box;
 }
 
-:root {
-  --main-bg-color: #2874f0;
-  --main-footer-color: #172337;
-  --font-medium: 500;
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
-header {
-  background-color: var(--main-bg-color);
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 186px; /* ye apne hisab se laga le bhai (ye bass accha dikhe iss liye kiya hai adjustment */
+.navbar {
+  width: 100%;
   height: 56px;
+  background-color: #2874f0;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-container {
   display: flex;
   flex-direction: column;
-}
-
-.main-logo-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 20.11px;
-}
-
-.main-logo-image {
-  height: 100%;
-  width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  border: 2px solid black;
 }
 
 .explore-container {
   display: flex;
-  justify-content: space-between;
-}
-
-.explore-container-text {
-  color: white;
-  font-size: 11px;
-  font-style: italic;
-  font-weight: 400;
-}
-
-.explore-container-plus {
-  color: #ffe500;
-}
-.explore-logo-container {
-  width: 10px;
-  height: 10px;
-  display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-.explore-logo-image {
+.logo-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 20.11px;
+}
+
+.logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+.explore-text-container {
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.explore-container span {
+  color: #ffe500;
+}
+
+.plus-logo-image-conntainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 10px;
+  height: 10px;
+  margin-left: 1.5px;
 }
 
-nav {
+.plus-logo-image {
   display: flex;
-}
-
-nav ul {
-  height: 52px;
-  display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-nav ul li {
-  list-style: none;
-  padding: 0 17px;
+.searchbar-container {
+  width: 591.09px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  border-radius: 2px 0 0 2px;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+.search-input {
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  border-radius: 2px 0 0 2px;
 }
 
-footer {
-  height: 12vh;
-  background-color: var(--main-footer-color);
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+.search-input-container {
+  color: #2874f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  height: 36px;
+  width: 42.33px;
+  right: 40px;
+  background-color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-input-container i {
+  font-weight: 1000;
+  font-size: 17.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
