@@ -1,80 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
-    --main-bg-color: #2874f0;
-    --main-footer-color: #172337;
-    --font-medium: 500;
+  --main-bg-color: #2874f0;
+  --main-footer-color: #172337;
+  --font-medium: 500;
 }
-  
 
 header {
-    background-color: var(--main-bg-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+  background-color: var(--main-bg-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 nav {
-    display: flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 186px; /* ye apne hisab se laga le bhai (ye bass accha dikhe iss liye kiya hai adjustment */
+  height: 56px;
 }
 
-.logo {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+.logo-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.logo img {
-    width: 69px;
-    padding: 0 23px;  
+.main-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 20.11px;
 }
 
-.explore-plus {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 5px;
+.main-logo-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.explore-plus a {
-    font-size: 11px;
-    font-style: italic;
-    color: #ffe500;
-    font-weight: var(--font-medium);
-    margin-right: 2px;
+.explore-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.explore-plus img {
-    width: 10px;
+.explore-container-text {
+  color: white;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.explore-container-plus {
+  color: #ffe500;
+}
+.explore-logo-container {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-logo-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
 }
 
 nav ul {
-    height: 52px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  height: 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 nav ul li {
-    list-style: none;
-    padding: 0 17px;
+  list-style: none;
+  padding: 0 17px;
 }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 footer {
-    height: 12vh;
-    background-color: var(--main-footer-color);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+  height: 12vh;
+  background-color: var(--main-footer-color);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
